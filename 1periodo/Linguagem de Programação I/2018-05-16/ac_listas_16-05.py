@@ -29,3 +29,38 @@ def primos(lista):
     return primos
 print(primos(criarLista(n=int(input("Digite um número: ")))))
 
+#Escreva um programa em Python com uma função
+#que faça a intercalação entre duas listas.
+print("\n+---------------------+")
+print("    EXERCÍCIO 13")
+print("+---------------------+\n")
+
+def intercala(l1,l2):
+    intercalada = []
+    for j,x in zip(l1, l2):
+        intercalada.append(j)
+        intercalada.append(x)
+    return intercalada
+
+print(intercala([6,6,6,9,5,10,22,13],[2,2,2,8,7,2,4,1]))
+
+#Escreva  um  programa  em  Python  com  uma  função  que,  dada  uma  lista  de  números  inteiros 
+#com  n  elementos,rearranje  os  elementos  da  lista de  tal  forma  que  todos  os  elementos 
+#menores ou iguais ao primeiro fiquem à sua esquerda e todos os outros, à sua direita.
+
+print("\n+---------------------+")
+print("    EXERCÍCIO 14")
+print("+---------------------+\n")
+
+#AINDA INCOMPLETA
+list_teste=[5,6,2,7,9,1,8,3,7]
+list2_te=[]
+for i in range(len(list_teste)):
+    for x in list_teste:
+        if i <= x:
+           list2_te.append(x)
+    print(list2_te)           
+
+
+
+    
