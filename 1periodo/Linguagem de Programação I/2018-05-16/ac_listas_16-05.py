@@ -54,12 +54,12 @@ print("+---------------------+\n")
 
 #AINDA INCOMPLETA
 list_teste=[5,6,2,7,9,1,8,3,7]
-list2_te=[]
+list_tes=[]
 for i in range(len(list_teste)):
-    for x in list_teste:
-        if i <= x:
-           list2_te.append(x)
-    print(list2_te)           
+  for x in range(len(list_teste)):
+      if x < i:
+          list_tes.append(x)
+print(list_tes)           
 
 
 
